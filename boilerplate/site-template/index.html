@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Site</title>
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header and primary navigation -->
+    <header>
+        <a href="index.html" class="logo">SiteName</a>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main page content -->
+    <main>
+        <!-- Hero/intro section -->
+        <section class="box">
+            <h1>Welcome</h1>
+            <p>Replace this text with your intro.</p>
+        </section>
+
+        <!-- Dynamic content section (API-driven areas can mount here) -->
+        <section class="box" id="dynamic-content"></section>
+    </main>
+
+    <!-- Config first, then scripts that use config -->
+    <script src="config.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

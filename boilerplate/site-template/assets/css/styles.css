@@ -1,0 +1,45 @@
+:root {
+    /* Theme variables */
+    --bg: #ffffff;
+    --text: #1e1e1e;
+    --accent: #c1121f;
+    --border: #e9c2c8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Global body defaults */
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+header {
+    /* Sticky nav shell */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+main {
+    /* Main content width + spacing */
+    width: min(980px, 92%);
+    margin: 2rem auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.box {
+    /* Reusable content card */
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
